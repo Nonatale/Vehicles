@@ -29,7 +29,7 @@ This project is covered under the MIT license.
 https://opensource.org/licenses/MIT
 
 ## Tests
-N?A
+[Video Link](https://ooo.mmhmm.app/watch/z_hndxfkTqDSJuLElDoiA9)
 
 ## Questions
 
