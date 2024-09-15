@@ -298,6 +298,7 @@ class Cli {
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
         if (answers.vehicleToTow == truck) {
           console.log("The truck cannot tow itself. Please select another vehicle.");
+          this.performActions();
         } else {
           truck.tow(answers.vehicleToTow);
           this.performActions();
@@ -323,10 +324,10 @@ class Cli {
             'Turn right',
             'Turn left',
             'Reverse',
-            'Select or create another vehicle',
-            'Exit',
             'Tow',
-            'Wheelie'
+            'Wheelie',
+            'Select or create another vehicle',
+            'Exit' 
           ],
         },
       ])
@@ -408,7 +409,6 @@ class Cli {
               const selectedBike = this.vehicles[i];
               if (selectedBike instanceof Motorbike) {
                 selectedBike.wheelie();
-                return;
               } else {
                 console.log('Only motorbikes can do a wheelie!');
               }

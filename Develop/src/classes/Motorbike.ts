@@ -64,7 +64,8 @@ class Motorbike extends Vehicle{
       Weight: ${this.weight}
       Top Speed: ${this.topSpeed}
       Color: ${this.color}
-      Wheels: ${this.wheels}
+      Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire
+      Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire
       `)
   }
 }

@@ -58,8 +58,8 @@ class Truck extends Vehicle implements AbleToTow{
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
     // TODO: If it is, log that the vehicle is being towed
     // TODO: If it is not, log that the vehicle is too heavy to be towed
-    const vehicleMake = this.make ?? "Vehicle";
-    if (this.weight < this.towingCapacity) {
+    const vehicleMake = vehicle.make ?? "Vehicle";
+    if (vehicle.weight < this.towingCapacity) {
       console.log(`The ${vehicleMake} will be towed.`)
     } else {
       console.log(`The ${vehicleMake} is too heavy to be towed.`);
@@ -82,7 +82,10 @@ class Truck extends Vehicle implements AbleToTow{
       Top Speed: ${this.topSpeed}
       Color: ${this.color}
       Towing Capacity: ${this.towingCapacity}
-      Wheels: ${this.wheels}
+      Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire
+      Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire
+      Wheel 3: ${this.wheels[2].getDiameter} inch with a ${this.wheels[2].getTireBrand} tire
+      Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire
       `)
   }
 }
